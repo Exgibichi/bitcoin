@@ -28,7 +28,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/statusquo/statusquo.git"
+- "url": "https://github.com/Exgibichi/statusquo.git"
   "dir": "statusquo"
 files: []
 script: |
