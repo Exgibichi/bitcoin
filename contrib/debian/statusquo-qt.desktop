@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Statusquo Core
+Comment=Connect to the Statusquo P2P Network
+Comment[de]=Verbinde mit dem Statusquo peer-to-peer Netzwerk
+Comment[fr]=Statusquo, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Statusquo, eşten eşe kriptografik sanal para birimi
+Exec=statusquo-qt %u
+Terminal=false
+Type=Application
+Icon=statusquo128
+MimeType=x-scheme-handler/statusquo;
+Categories=Office;Finance;

@@ -1,0 +1,6 @@
+usr/local/bin/statusquo-qt usr/bin
+share/pixmaps/statusquo32.xpm usr/share/pixmaps
+share/pixmaps/statusquo16.xpm usr/share/pixmaps
+share/pixmaps/statusquo128.png usr/share/pixmaps
+debian/statusquo-qt.desktop usr/share/applications
+debian/statusquo-qt.protocol usr/share/kde4/services/

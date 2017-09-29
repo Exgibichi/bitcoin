@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_TXMEMPOOL_H
-#define BITCOIN_TXMEMPOOL_H
+#ifndef STATUSQUO_TXMEMPOOL_H
+#define STATUSQUO_TXMEMPOOL_H
 
 #include <memory>
 #include <set>
@@ -775,4 +775,4 @@ struct DisconnectedBlockTransactions {
     }
 };
 
-#endif // BITCOIN_TXMEMPOOL_H
+#endif // STATUSQUO_TXMEMPOOL_H

@@ -1,0 +1,33 @@
+# /etc/conf.d/statusquod: config file for /etc/init.d/statusquod
+
+# Config file location
+#STATUSQUOD_CONFIGFILE="/etc/statusquo/statusquo.conf"
+
+# What directory to write pidfile to?  (created and owned by $STATUSQUOD_USER)
+#STATUSQUOD_PIDDIR="/var/run/statusquod"
+
+# What filename to give the pidfile
+#STATUSQUOD_PIDFILE="${STATUSQUOD_PIDDIR}/statusquod.pid"
+
+# Where to write statusquod data (be mindful that the blockchain is large)
+#STATUSQUOD_DATADIR="/var/lib/statusquod"
+
+# User and group to own statusquod process
+#STATUSQUOD_USER="statusquo"
+#STATUSQUOD_GROUP="statusquo"
+
+# Path to statusquod executable
+#STATUSQUOD_BIN="/usr/bin/statusquod"
+
+# Nice value to run statusquod under
+#STATUSQUOD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#STATUSQUOD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for statusquod to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+STATUSQUOD_SIGTERM_TIMEOUT=60

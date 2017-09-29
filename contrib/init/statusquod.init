@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  statusquod The statusquo core server.
+#
+#
+# chkconfig: 345 80 20
+# description: statusquod
+# processname: statusquod
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/statusquod, see below
+if [ -f /etc/sysconfig/statusquod ]; then
+        . /etc/sysconfig/statusquod
+fi
+
+RETVAL=0
+
+prog=statusquod
+# you can override the lockfile via STATUSQUOD_LOCKFILE in /etc/sysconfig/statusquod
+lockfile=${STATUSQUOD_LOCKFILE-/var/lock/subsys/statusquod}
+
+# statusquod defaults to /usr/bin/statusquod, override with STATUSQUOD_BIN
+statusquod=${STATUSQUOD_BIN-/usr/bin/statusquod}
+
+# statusquod opts default to -disablewallet, override with STATUSQUOD_OPTS
+statusquod_opts=${STATUSQUOD_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $statusquod $statusquod_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac
