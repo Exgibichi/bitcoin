@@ -256,7 +256,7 @@ bool CheckSequenceLocks(const CTransaction &tx, int flags, LockPoints* lp, bool 
 
     CBlockIndex* tip = chainActive.Tip();
     assert(tip != nullptr);
-    
+
     CBlockIndex index;
     index.pprev = tip;
     // CheckSequenceLocks() uses chainActive.Height()+1 to evaluate
@@ -1025,6 +1025,9 @@ bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex, const Consensus
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
+    if (nHeight <= 2000) {
+        return 1000 * COIN;
+    }
     int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
     // Force block reward to zero when right shift is undefined.
     if (halvings >= 64)
