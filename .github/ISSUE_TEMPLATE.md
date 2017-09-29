@@ -4,7 +4,7 @@ This issue tracker is only for technical issues related to statusquo-core.
 
 General statusquo questions and/or support requests and are best directed to the [Statusquo StackExchange](https://statusquo.stackexchange.com).
 
-For reporting security issues, please read instructions at [https://statusquocore.org/en/contact/](https://statusquocore.org/en/contact/).
+For reporting security issues, please read instructions at [https://statusquo.cash/en/contact/](https://statusquo.cash/en/contact/).
 
 ### Describe the issue
 

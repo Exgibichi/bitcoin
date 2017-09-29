@@ -28,7 +28,7 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/statusquo/statusquo.git"
+- "url": "https://github.com/Exgibichi/statusquo.git"
   "dir": "statusquo"
 files:
 - "MacOSX10.11.sdk.tar.gz"

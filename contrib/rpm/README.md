@@ -19,7 +19,7 @@ reference the release tarball available from https://statusquo.org/bin/ and
 `Source1` should reference the BerkeleyDB source.
 
 Sources 10-99 are for source files that are maintained in the
-[Statusquo git repository](https://github.com/statusquo/statusquo) but are not part of
+[Statusquo git repository](https://github.com/Exgibichi/statusquo) but are not part of
 the release tarball. Most of these will reside in the `contrib` sub-directory.
 
 Sources 10-19 should be reserved for miscellaneous configuration files.

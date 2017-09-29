@@ -209,8 +209,8 @@ def main():
     enable_statusquod = config["components"].getboolean("ENABLE_STATUSQUOD")
 
     if config["environment"]["EXEEXT"] == ".exe" and not args.force:
-        # https://github.com/statusquo/statusquo/commit/d52802551752140cf41f0d9a225a43e84404d3e9
-        # https://github.com/statusquo/statusquo/pull/5677#issuecomment-136646964
+        # https://github.com/Exgibichi/statusquo/commit/d52802551752140cf41f0d9a225a43e84404d3e9
+        # https://github.com/Exgibichi/statusquo/pull/5677#issuecomment-136646964
         print("Tests currently disabled on Windows by default. Use --force option to enable")
         sys.exit(0)
 

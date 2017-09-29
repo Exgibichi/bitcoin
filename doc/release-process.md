@@ -3,9 +3,9 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/statusquo/statusquo/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/Exgibichi/statusquo/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/statusquo/statusquo/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/Exgibichi/statusquo/blob/master/contrib/devtools/README.md#gen-manpagessh).
 
 Before every minor and major release:
 
@@ -21,7 +21,7 @@ Before every minor and major release:
 
 Before every major release:
 
-* Update hardcoded [seeds](/contrib/seeds/README.md), see [this pull request](https://github.com/statusquo/statusquo/pull/7415) for an example.
+* Update hardcoded [seeds](/contrib/seeds/README.md), see [this pull request](https://github.com/Exgibichi/statusquo/pull/7415) for an example.
 * Update [`BLOCK_CHAIN_SIZE`](/src/qt/intro.cpp) to the current size plus some overhead.
 * Update `src/chainparams.cpp` chainTxData with statistics about the transaction count and rate.
 * Update version of `contrib/gitian-descriptors/*.yml`: usually one'd want to do this on master after branching off the release - but be sure to at least do it before a new major release
@@ -36,7 +36,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/statusquo-core/gitian.sigs.git
     git clone https://github.com/statusquo-core/statusquo-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/statusquo/statusquo.git
+    git clone https://github.com/Exgibichi/statusquo.git
 
 ### Statusquo maintainers/release engineers, suggestion for writing release notes
 
@@ -84,7 +84,7 @@ Ensure gitian-builder is up-to-date:
 
     pushd ./gitian-builder
     mkdir -p inputs
-    wget -P inputs https://statusquocore.org/cfields/osslsigncode-Backports-to-1.7.1.patch
+    wget -P inputs https://statusquo.cash/cfields/osslsigncode-Backports-to-1.7.1.patch
     wget -P inputs http://downloads.sourceforge.net/project/osslsigncode/osslsigncode/osslsigncode-1.7.1.tar.gz
     popd
 
@@ -292,9 +292,9 @@ statusquo.org (see below for statusquo.org update instructions).
 
   - statusquo-dev and statusquo-core-dev mailing list
 
-  - Statusquo Core announcements list https://statusquocore.org/en/list/announcements/join/
+  - Statusquo Core announcements list https://statusquo.cash/en/list/announcements/join/
 
-  - statusquocore.org blog post
+  - statusquo.cash blog post
 
   - Update title of #statusquo on Freenode IRC
 
@@ -304,6 +304,6 @@ statusquo.org (see below for statusquo.org update instructions).
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/statusquo/statusquo/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/Exgibichi/statusquo/releases/new) with a link to the archived release notes.
 
   - Celebrate

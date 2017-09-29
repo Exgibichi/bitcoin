@@ -511,8 +511,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/statusquo/statusquo>";
-    const std::string URL_WEBSITE = "<https://statusquocore.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/Exgibichi/statusquo>";
+    const std::string URL_WEBSITE = "<https://statusquo.cash>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +

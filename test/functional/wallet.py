@@ -353,7 +353,7 @@ class WalletTest(StatusquoTestFramework):
             '-reindex',
             '-zapwallettxes=1',
             '-zapwallettxes=2',
-            # disabled until issue is fixed: https://github.com/statusquo/statusquo/issues/7463
+            # disabled until issue is fixed: https://github.com/Exgibichi/statusquo/issues/7463
             # '-salvagewallet',
         ]
         chainlimit = 6

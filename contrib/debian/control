@@ -26,9 +26,9 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: https://statusquocore.org/
+Homepage: https://statusquo.cash/
 Vcs-Git: git://github.com/statusquo/statusquo.git
-Vcs-Browser: https://github.com/statusquo/statusquo
+Vcs-Browser: https://github.com/Exgibichi/statusquo
 
 Package: statusquod
 Architecture: any

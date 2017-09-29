@@ -31,7 +31,7 @@ Build Statusquo Core
 
 1. Clone the statusquo source code and cd into `statusquo`
 
-        git clone https://github.com/statusquo/statusquo
+        git clone https://github.com/Exgibichi/statusquo
         cd statusquo
 
 2.  Build statusquo-core:
@@ -98,4 +98,4 @@ Notes
 
 * Tested on OS X 10.8 through 10.12 on 64-bit Intel processors only.
 
-* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/statusquo/statusquo/issues/7714)
+* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/Exgibichi/statusquo/issues/7714)
