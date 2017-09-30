@@ -8,11 +8,11 @@
 - Test that it is not possible to mine to an invalid address.
 """
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import StatusquoTestFramework
 from test_framework.util import *
 
 
-class DisableWalletTest (BitcoinTestFramework):
+class DisableWalletTest (StatusquoTestFramework):
 
     def __init__(self):
         super().__init__()
