@@ -1,0 +1,22 @@
+[Unit]
+Description=Statusquo's distributed currency daemon
+After=network.target
+
+[Service]
+User=statusquo
+Group=statusquo
+
+Type=forking
+PIDFile=/var/lib/statusquod/statusquod.pid
+ExecStart=/usr/bin/statusquod -daemon -pid=/var/lib/statusquod/statusquod.pid \
+-conf=/etc/statusquo/statusquo.conf -datadir=/var/lib/statusquod -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

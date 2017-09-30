@@ -1,0 +1,8 @@
+/usr/bin/statusquo-cli		--	gen_context(system_u:object_r:statusquo_exec_t,s0)
+/usr/sbin/statusquod		--	gen_context(system_u:object_r:statusquo_exec_t,s0)
+/usr/lib(64)?/statusquo/statusquod		--	gen_context(system_u:object_r:statusquo_exec_t,s0)
+
+/etc/statusquo(/.*)?		gen_context(system_u:object_r:statusquo_conf_t,s0)
+/var/lib/statusquo(/.*)?		gen_context(system_u:object_r:statusquo_var_lib_t,s0)
+
+(/var)?/run/statusquod(/.*)?   gen_context(system_u:object_r:statusquo_var_run_t,s0)
