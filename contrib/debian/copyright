@@ -7,7 +7,7 @@ Source: https://github.com/Exgibichi/statusquo
 Files: *
 Copyright: 2009-2017, Bitcoin Core Developers
 License: Expat
-Comment: The Statusquo Core Developers encompasses the current developers listed on statusquo.org,
+Comment: The Statusquo Core Developers encompasses the current developers listed on statusquo.cash,
          as well as the numerous contributors to the project.
 
 Files: debian/*

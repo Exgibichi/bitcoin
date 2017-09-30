@@ -1,6 +1,6 @@
 Statusquo Core version *0.15.0.1* is now available from:
 
-  <https://statusquo.org/bin/statusquo-core-0.15.0.1/>
+  <https://statusquo.cash/bin/statusquo-core-0.15.0.1/>
 
 This is a minor bug fix for 0.15.0.
 
@@ -10,7 +10,7 @@ Please report bugs using the issue tracker at GitHub:
 
 To receive security and update notifications, please subscribe to:
 
-  <https://statusquocore.org/en/list/announcements/join/>
+  <https://statusquo.cash/en/list/announcements/join/>
 
 How to Upgrade
 ==============

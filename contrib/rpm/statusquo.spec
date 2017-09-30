@@ -20,8 +20,8 @@ Summary:	Peer to Peer Cryptographic Currency
 
 Group:		Applications/System
 License:	MIT
-URL:		https://statusquo.org/
-Source0:	https://statusquo.org/bin/statusquo-core-%{version}/statusquo-%{version}.tar.gz
+URL:		https://statusquo.cash/
+Source0:	https://statusquo.cash/bin/statusquo-core-%{version}/statusquo-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
 Source10:	https://raw.githubusercontent.com/statusquo/statusquo/v%{version}/contrib/debian/examples/statusquo.conf
