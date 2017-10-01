@@ -119,38 +119,19 @@ public:
         nPruneAfterHeight = 100000;
 
         genesis = CreateGenesisBlock(1506743937, 189224, 0x1f00ffff, 1, 50 * COIN);
-        if (false) {
-            printf("Genesis mining started\n");
-            genesis.nNonce = 0;
-            consensus.hashGenesisBlock = uint256S("0x001");
-            for(genesis.nNonce == 0; UintToArith256(genesis.GetHash()) > UintToArith256(consensus.powLimit); genesis.nNonce++){  }
-            printf("New genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-            printf("New genesis nonce: %lu\n", (unsigned long)genesis.nNonce);
-            printf("New genesis hash: %s\n", genesis.GetHash().ToString().c_str());
-            printf("Now replace the values, reComment the Genesis mining code and reCompile. \n");
-        }
+
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("00000325c2a5561a9b22ae38f9bdee5711e736ad7f46e24b4688a5f53bbd50d3"));
         assert(genesis.hashMerkleRoot == uint256S("d1d71d8ec5323a2fe6e5201879a354f93127687274cdcc129fe45a19d2042df5"));
 
-        /*
-        // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.emplace_back("seed.STATUSQUO.sipa.be", true); // Pieter Wuille, only supports x1, x5, x9, and xd
-        vSeeds.emplace_back("dnsseed.bluematt.me", true); // Matt Corallo, only supports x9
-        vSeeds.emplace_back("dnsseed.STATUSQUO.dashjr.org", false); // Luke Dashjr
-        vSeeds.emplace_back("seed.STATUSQUOstats.com", true); // Christian Decker, supports x1 - xf
-        vSeeds.emplace_back("seed.STATUSQUO.jonasschnelli.ch", true); // Jonas Schnelli, only supports x1, x5, x9, and xd
-        */
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,128);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
-        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
-        vFixedSeeds.clear();
-        vSeeds.clear();
         vSeeds.emplace_back("seed.statusquo.cash", true); // first seed
+        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
@@ -219,16 +200,7 @@ public:
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1506743938, 20125, 0x1f00ffff, 1, 50 * COIN);
-        if (false) {
-            printf("Genesis mining started\n");
-            genesis.nNonce = 0;
-            consensus.hashGenesisBlock = uint256S("0x001");
-            for(genesis.nNonce == 0; UintToArith256(genesis.GetHash()) > UintToArith256(consensus.powLimit); genesis.nNonce++){  }
-            printf("New genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-            printf("New genesis nonce: %lu\n", (unsigned long)genesis.nNonce);
-            printf("New genesis hash: %s\n", genesis.GetHash().ToString().c_str());
-            printf("Now replace the values, reComment the Genesis mining code and reCompile. \n");
-        }
+
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0000f59720142ae4466995eb28753a0e70d90a71e27780f5ad931797a6db5497"));
         assert(genesis.hashMerkleRoot == uint256S("d1d71d8ec5323a2fe6e5201879a354f93127687274cdcc129fe45a19d2042df5"));
@@ -241,10 +213,8 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
-        vFixedSeeds.clear();
-        vSeeds.clear();
         vSeeds.emplace_back("seed.statusquo.cash", true); // first seed
+        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
@@ -310,16 +280,7 @@ public:
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1296688602, 2, 0x207fffff, 1, 50 * COIN);
-        if (true) {
-            printf("Genesis mining started\n");
-            genesis.nNonce = 0;
-            consensus.hashGenesisBlock = uint256S("0x001");
-            for(genesis.nNonce == 0; UintToArith256(genesis.GetHash()) > UintToArith256(consensus.powLimit); genesis.nNonce++){  }
-            printf("New genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-            printf("New genesis nonce: %lu\n", (unsigned long)genesis.nNonce);
-            printf("New genesis hash: %s\n", genesis.GetHash().ToString().c_str());
-            printf("Now replace the values, reComment the Genesis mining code and reCompile. \n");
-        }
+
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206"));
         assert(genesis.hashMerkleRoot == uint256S("0x4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"));
