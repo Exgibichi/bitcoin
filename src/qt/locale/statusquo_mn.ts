@@ -127,7 +127,7 @@
     </message>
     <message>
         <source>Statusquo</source>
-        <translation>Биткойн</translation>
+        <translation>Statusquo</translation>
     </message>
     <message>
         <source>Wallet</source>

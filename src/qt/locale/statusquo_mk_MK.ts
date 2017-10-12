@@ -139,7 +139,7 @@
     </message>
     <message>
         <source>Send coins to a Statusquo address</source>
-        <translation>Испрати биткоини на Биткоин адреса</translation>
+        <translation>Испрати statusquos на Statusquo адреса</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
@@ -147,7 +147,7 @@
     </message>
     <message>
         <source>Statusquo</source>
-        <translation>Биткоин</translation>
+        <translation>Statusquo</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -579,7 +579,7 @@
     </message>
     <message>
         <source>Statusquo Core</source>
-        <translation>Биткоин Core</translation>
+        <translation>Statusquo Core</translation>
     </message>
     <message>
         <source>Warning</source>

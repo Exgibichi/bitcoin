@@ -71,7 +71,7 @@
     </message>
     <message>
         <source>Statusquo</source>
-        <translation>Биткоин</translation>
+        <translation>Statusquo</translation>
     </message>
     <message>
         <source>Wallet</source>
